@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <img src="Domino.jpeg" alt="Domino" width="400">
+        <br>
+        <a href="https://web.dominos.co.kr/goods/list">메뉴</a>
+        <a href="https://web.dominos.co.kr/basket/branch?order_gubun=O&requestOrderGubun=O">배달 주문</a>
+        <a href="https://web.dominos.co.kr/basket/branch?order_gubun=O&requestOrderGubun=W">포장 주문</a>
+    </header>
+
+    <main>
+        <article>
+
+            <h1>메뉴</h1>
+            
+            <section>
+                <h3>블랙 타이거 슈림프</h3>
+                <img src="BlackTiger.jpg" alt="블랙 타이거 슈림프" width="200" height="200"><br>바다와 육지의 대왕이 하나로
+            </section>
+
+            <section>
+                <h3>뉴욕 오리진</h3>
+                <img src="NewYorkOrigin.jpg" alt="뉴욕 오리진" width="200" height="200"><br>다채로운 토핑의 미국 피자 오리진 스타일
+            </section>
+        </article>
+
+        <br>
+
+        <form action="/submit_form" method="post">
+
+            <h1>배달주문</h1>
+
+            <label for="pizza">피자 종류 : </label>
+            <select id="pizza" name="pizza">
+            <option disabled selected>피자 종류를 선택하세요</option>
+            <option value="BlackTiger">블랙 타이거 슈림프</option>
+            <option value="NewYorkOrigin">뉴욕 오리진</option>
+            </select>
+
+            <br><br>
+            
+            <fieldset>
+                <legend>피자 사이즈</legend>
+                <input type="radio" name="size" value="R">R
+                <input type="radio" name="size" value="L">L
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>토핑 선택</legend>
+                <input type="checkbox" name="topping" value="pepperoni">페퍼로니
+                <input type="checkbox" name="topping" value="onion">양파
+                <input type="checkbox" name="topping" value="olive">올리브
+                <input type="checkbox" name="topping" value="cheese">치즈
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>추가메뉴</legend>
+                <input type="checkbox" name="add" value="onion" checked>피클
+                <input type="checkbox" name="add" value="olive" checked>핫소스
+                <input type="checkbox" name="add" value="cheese">갈릭소스
+                <input type="checkbox" name="add" value="one">치즈가루
+                <input type="checkbox" name="add" value="one">요거트소스
+            </fieldset>
+
+            <br>
+
+            <label for="nick">닉네임 : </label>
+            <input type="text" id="name" name="name">
+
+            <br>
+
+            <label for="email">이메일 : </label>
+            <input type="email" id="email" name="email">
+
+            <br>
+
+            <label for="address">배달주소 : </label>
+            <textarea id="address" name="address" rows="2" cols="20"></textarea>
+
+            <br>
+
+            <label for="pizza">결제수단 : </label>
+            <select id="pizza" name="pizza">
+            <option disabled selected>결제수단을 선택하세요</option>
+            <option value="card">카드결제</option>
+            <option value="phone">핸드폰결제</option>
+            <option value="naver">naver pay</option>
+            <option value="kakao">kakao pay</option>
+            <option value="payco">payco</option>
+            <option value="smilepay">smile pay</option>
+            <option value="toss">toss</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">주문하기</button>
+      </form>
+    </main>
+
+    <footer>
+        <br><br><br><br>
+        <a href="tel:1577-3082">1577-3082</a>
+        <p>Copyright &copy; Domino's Pizza. All right reserved</p>
+    </footer>
+
+</body>
+</html>
